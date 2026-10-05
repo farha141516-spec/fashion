@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LUXEWEAR - moderne kleding voor iedere stijl.">
+  <title>LUXEWEAR — Modern Clothing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fashion.css">
+</head>
+<body>
+  <div class="announcement">Gratis verzending vanaf €75 · 30 dagen retour</div>
+
+  <header class="header">
+    <a class="logo" href="#home">LUXE<span>WEAR</span></a>
+    <nav class="nav" aria-label="Hoofdnavigatie">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#nieuw">Nieuw</a>
+      <a href="#over-ons">Over ons</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Zoeken">⌕</button>
+      <button class="icon-btn cart-button" id="cartBtn" aria-label="Winkelwagen">
+        🛒 <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">AUTUMN / WINTER 2026</p>
+        <h1>Style that<br><em>speaks.</em></h1>
+        <p class="hero-text">Ontdek tijdloze essentials en moderne statement pieces, ontworpen voor jouw dagelijkse stijl.</p>
+        <a class="btn btn-dark" href="#shop">Shop collectie <span>→</span></a>
+      </div>
+      <div class="hero-art" aria-label="Modebeeld">
+        <div class="model-card">
+          <div class="model-head"></div>
+          <div class="model-body"></div>
+          <div class="model-pants"></div>
+        </div>
+        <div class="hero-badge">NEW<br>DROP</div>
+      </div>
+    </section>
+
+    <section class="categories">
+      <div><span>01</span><strong>Dames</strong></div>
+      <div><span>02</span><strong>Heren</strong></div>
+      <div><span>03</span><strong>Essentials</strong></div>
+      <div><span>04</span><strong>Accessoires</strong></div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">SHOP</p>
+          <h2>Onze favorieten</h2>
+        </div>
+        <div class="filters" id="filters">
+          <button class="filter active" data-category="all">Alles</button>
+          <button class="filter" data-category="dames">Dames</button>
+          <button class="filter" data-category="heren">Heren</button>
+          <button class="filter" data-category="accessoires">Accessoires</button>
+        </div>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="statement" id="nieuw">
+      <div>
+        <p class="eyebrow">LUXEWEAR PHILOSOPHY</p>
+        <h2>Minder trends.<br><em>Meer stijl.</em></h2>
+      </div>
+      <p>Wij geloven in kleding die je vandaag aantrekt en volgend seizoen nog steeds wilt dragen. Goede materialen, sterke silhouetten en details die het verschil maken.</p>
+    </section>
+
+    <section class="newsletter" id="over-ons">
+      <div>
+        <p class="eyebrow">STAY IN THE LOOP</p>
+        <h2>10 % korting op je eerste order.</h2>
+        <p>Schrijf je in voor nieuwe drops, styling tips en exclusieve aanbiedingen.</p>
+      </div>
+      <form id="newsletterForm">
+        <label class="sr-only" for="email">E-mailadres</label>
+        <input id="email" type="email" placeholder="jouw@email.nl" required>
+        <button class="btn btn-dark" type="submit">Inschrijven →</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="logo">LUXE<span>WEAR</span></div>
+    <p>© 2026 LUXEWEAR. Alle rechten voorbehouden.</p>
+    <div class="footer-links"><a href="#">Privacy</a><a href="#">Voorwaarden</a><a href="#">Contact</a></div>
+  </footer>
+
+  <div class="search-overlay" id="searchOverlay" aria-hidden="true">
+    <div class="search-box">
+      <button class="close-btn" id="closeSearch">×</button>
+      <p class="eyebrow">ZOEKEN</p>
+      <input id="searchInput" type="search" placeholder="Zoek naar een product...">
+      <div id="searchResults"></div>
+    </div>
+  </div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-header">
+      <h2>Jouw winkelwagen</h2>
+      <button class="close-btn" id="closeCart">×</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Totaal</span><strong id="cartTotal">€0,00</strong></div>
+      <button class="btn btn-dark checkout-btn" id="checkoutBtn">Naar afrekenen →</button>
+      <p class="small">Belastingen inbegrepen. Verzendkosten worden berekend bij het afrekenen.</p>
+    </div>
+  </aside>
+  <div class="backdrop" id="backdrop"></div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="fashion.js"></script>
+</body>
+</html>
+

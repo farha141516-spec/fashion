@@ -1,0 +1,3 @@
+Wat ging goed en wat vond je lastig tijdens de opdracht?
+
+Voor deze opdracht heb ik een website gemaakt met HTML, CSS en JavaScript. In het begin vond ik het lastig om de code goed te begrijpen. Bij mijn eerste repository werkte de website niet goed en had ik daar problemen mee. Uiteindelijk heb ik dit opgelost en werkt de website nu wel. Ik heb hierdoor geleerd hoe HTML, CSS en JavaScript samenwerken en hoe ik problemen stap voor stap kan oplossen.
